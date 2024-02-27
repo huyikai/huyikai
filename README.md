@@ -1,6 +1,6 @@
 <div align="center">
   <div>
-    <img src="https://readme-typing-svg.demolab.com/?font=monospace+Fira+Code&pause=1000&width=432&height=80&multiline=true&duration=1500&center=true&size=20&lines=If you're not worried, you should be;If you're worried, you needn't be" />
+    <img src="https://readme-typing-svg.demolab.com/?font=monospace+Fira+Code&pause=1500&width=432&height=64&multiline=true&duration=1500&center=true&size=20&lines=If you're not worried, you should be;If you're worried, you needn't be" />
   </div>
   
   Hey, 👋 My name is huyikai.
