@@ -12,7 +12,7 @@
 </div>
 <br>
 <p align="center">
-  <a href="https://skillicons.dev">
+  <a href="https://github.com/huyikai">
     <img src="https://skillicons.dev/icons?i=html,css,sass,less,tailwind,js,ts,vite,vue,pinia,vitest,react,pnpm,flutter,astro,python,django,nodejs,npm,express,git,docker,nginx,md,figma,ps,ai,pr,discord,tensorflow" />
   </a>
 </p>
