@@ -7,10 +7,15 @@
 
   👨‍💻 I‘m a software engineer.
 
-  🚀 Contributor to [Astro](https://github.com/withastro). and do some other open source project in my spare time.
+  🚀 Contributor to [Astro](https://github.com/withastro). 
   
-  | <a href="https://github.com/huyikai"><img align="center" src="https://github-readme-stats.vercel.app/api?username=huyikai&show_icons=true&theme=buefy&hide_border=true" alt="huyikai github stats" /></a> | <a href="https://github.com/huyikai"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=huyikai&layout=compact&theme=buefy&hide_border=true" /></a> |
+  [![@huyikai Astro contributions](https://astro.badg.es/v2/contributor/huyikai.svg)](https://astro.badg.es/contributor/huyikai/)
+  
+  ⌨️ In my spare timedo some other open source project.
+  
+  | <a href="https://github.com/huyikai"><img align="center" src="https://github-readme-stats.vercel.app/api?username=huyikai&show_icons=true&theme=buefy&hide_border=true" alt="huyikai github stats" /></a> | <a href="https://github.com/huyikai"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=huyikai&layout=compact&theme=buefy&hide_border=true" /></a> | 
   | ------------- | ------------- |
+  
 </div>
 <br>
 <p align="center">
