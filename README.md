@@ -7,15 +7,14 @@
 
   👨‍💻 I‘m a software engineer.
 
+  [More information about me](https://huyikai.xyz/about/)
+
   |  🚀 Contributor to [Astro](https://github.com/withastro).  |  [![@huyikai Astro contributions](https://astro.badg.es/v2/contributor/huyikai.svg)](https://astro.badg.es/contributor/huyikai/)| 
   | ------------- | ------------- |
   
   | <a href="https://github.com/huyikai"><img align="center" src="https://github-readme-stats.vercel.app/api?username=huyikai&show_icons=true&theme=buefy&hide_border=true" alt="huyikai github stats" /></a> | <a href="https://github.com/huyikai"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=huyikai&layout=compact&theme=buefy&hide_border=true" /></a> | 
   | ------------- | ------------- |
 
-
-
- 
 </div>
 <br>
 <p align="center">
