@@ -15,12 +15,15 @@
 </div>
 
 ```console
-$ ls hobbies/
-photography/
+$ neofetch
 
-$ contact --list
-blog   huyikai.xyz
-mail   hyktiger@gmail.com
+    ┌──┐      yikai@github
+    │██│      ────────────
+ ┌──┴──┴─┐   os:      macOS
+ │  ┌──┐  │   focus:   web tools, astro, ai media
+ │  │◉ │  │   hobbies: photography
+ │  └──┘  │   blog:    huyikai.xyz
+ └────────┘   mail:    hyktiger@gmail.com
 ```
 
 <picture>
