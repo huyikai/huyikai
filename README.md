@@ -1,6 +1,8 @@
 <div align="center">  
   👋 Hey, My name is huyikai.
 
+  <br />
+
   👨‍💻 I‘m a software engineer @ retail-ai-inc
 
   [More information about me](https://huyikai.xyz/about/)
