@@ -15,8 +15,5 @@
 </div>
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=huyikai&show_icons=true&hide_border=true&count_private=true&theme=github_dark" />
-    <img src="https://github-readme-stats.vercel.app/api?username=huyikai&show_icons=true&hide_border=true&count_private=true" alt="GitHub stats: total stars, commits, pull requests" />
-  </picture>
+  <img src="https://raw.githubusercontent.com/huyikai/huyikai/output/stats.svg" alt="GitHub stats: stars, commits, pull requests" width="440" />
 </div>
