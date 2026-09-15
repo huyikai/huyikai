@@ -1,0 +1,73 @@
+name: generate stats
+
+on:
+  schedule:
+    - cron: "20 6 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: output
+
+      - name: fetch numbers
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          api() { curl -s -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" "$1"; }
+          STARS=$(api "https://api.github.com/users/huyikai/repos?per_page=100&fork=false" | jq '[.[].stargazers_count] | add')
+          COMMITS=$(api "https://api.github.com/search/commits?q=author%3Ahuyikai&per_page=1" | jq '.total_count')
+          PRS=$(api "https://api.github.com/search/issues?q=type%3Apr+author%3Ahuyikai&per_page=1" | jq '.total_count')
+          echo "STARS=$STARS" >> "$GITHUB_ENV"
+          echo "COMMITS=$COMMITS" >> "$GITHUB_ENV"
+          echo "PRS=$PRS" >> "$GITHUB_ENV"
+
+      - name: render svg
+        run: |
+          python3 - <<'PY'
+          import os
+          fmt = lambda v: f"{int(v):,}"
+          stars, commits, prs = fmt(os.environ["STARS"]), fmt(os.environ["COMMITS"]), fmt(os.environ["PRS"])
+          svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="480" height="140" viewBox="0 0 480 140">
+            <style>
+              text {{ font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; fill: #24292F; }}
+              .num {{ font-size: 30px; font-weight: 600; }}
+              .lbl {{ font-size: 11px; letter-spacing: 2px; fill: #57606A; }}
+              .rule {{ stroke: #D0D7DE; stroke-width: 1; }}
+              @media (prefers-color-scheme: dark) {{
+                text {{ fill: #C9D1D9; }}
+                .lbl {{ fill: #8B949E; }}
+                .rule {{ stroke: #30363D; }}
+              }}
+            </style>
+            <line class="rule" x1="20" y1="30" x2="460" y2="30"/>
+            <text class="num" x="90" y="90" text-anchor="middle">{stars}</text>
+            <text class="lbl" x="90" y="115" text-anchor="middle">STARS</text>
+            <line class="rule" x1="160" y1="55" x2="160" y2="120"/>
+            <text class="num" x="240" y="90" text-anchor="middle">{commits}</text>
+            <text class="lbl" x="240" y="115" text-anchor="middle">COMMITS</text>
+            <line class="rule" x1="320" y1="55" x2="320" y2="120"/>
+            <text class="num" x="390" y="90" text-anchor="middle">{prs}</text>
+            <text class="lbl" x="390" y="115" text-anchor="middle">PULL REQUESTS</text>
+          </svg>
+          """
+          open("stats.svg", "w").write(svg)
+          PY
+
+      - name: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add stats.svg
+          git diff --cached --quiet || git commit -m "chore: update stats"
+          git push
