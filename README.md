@@ -1,25 +1,20 @@
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=1500&pause=1500&center=true&vCenter=true&multiline=true&width=435&height=64&color=39D353&lines=If+you're+not+worried%2C+you+should+be;If+you're+worried%2C+you+needn't+be" />
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=1500&pause=1500&center=true&vCenter=true&multiline=true&width=435&height=64&color=1A7F37&lines=If+you're+not+worried%2C+you+should+be;If+you're+worried%2C+you+needn't+be" alt="If you're not worried, you should be; if you're worried, you needn't be" />
-  </picture>
-</div>
+  <div>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=1500&pause=1000&center=true&vCenter=true&multiline=true&width=435&height=64&lines=If+you're+not+worried%2C+you+should+be;If+you're+worried%2C+you+needn't+be" alt="Typing SVG" />
+  </div>
+  
+  👋 Hey, My name is huyikai.
 
-<div align="center">
-  Contributor to <a href="https://github.com/withastro">Astro</a>&nbsp;&nbsp;
-  <a href="https://astro.badg.es/contributor/huyikai/">
-    <img src="https://astro.badg.es/v2/contributor/huyikai.svg" alt="Astro contributor badge" width="200" align="middle" />
-  </a>
+  👨‍💻 I‘m a software engineer @ retail-ai-inc
+
+  [More information about me](https://huyikai.xyz/about/)
+
+  |  🚀 Contributor to [Astro](https://github.com/withastro).  |  [![@huyikai Astro contributions](https://astro.badg.es/v2/contributor/huyikai.svg)](https://astro.badg.es/contributor/huyikai/)| 
+  | ------------- | ------------- |
+  
 </div>
 
 ```console
-$ whoami
-yikai · software engineer @ retail-ai-inc
-
-$ cat /etc/motd
-build web tools that solve real problems
-contribute to astro on the side
-
 $ ls hobbies/
 photography/
 
