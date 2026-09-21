@@ -23,12 +23,3 @@
 </div>
 
 <br />
-<br />
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=1500&pause=1500&center=true&vCenter=true&multiline=true&width=435&height=64&color=39D353&lines=If+you're+not+worried%2C+you+should+be;If+you're+worried%2C+you+needn't+be" />
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=1500&pause=1500&center=true&vCenter=true&multiline=true&width=435&height=64&color=1A7F37&lines=If+you're+not+worried%2C+you+should+be;If+you're+worried%2C+you+needn't+be" alt="If you're not worried, you should be; if you're worried, you needn't be" />
-  </picture>
-</div>
-
